@@ -3,7 +3,10 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.tang.spark.session;  
+package com.tang.spark.session;
+
+import java.io.Serializable;
+
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
