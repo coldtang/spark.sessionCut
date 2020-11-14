@@ -1,4 +1,4 @@
-package com.tang.spark.session
+package com.tang.session
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -20,11 +20,23 @@ object SessionCutETL {
     val rawRDD: RDD[String] = sc.textFile("data/rawdata/visit_log.txt")
 
     // 解析数据并过滤
-    val parseLog: RDD[TrackerLog] = rawRDD.flatMap(line => RawLogParser.parse(line))
+    val parseLogRDD: RDD[TrackerLog] = rawRDD.flatMap(line => RawLogParser.parse(line))
       .filter(log => logTypeSet.contains(log.getLogType.toString))
 
+    // 分组数据
+    val userGroupRDD: RDD[(String, Iterable[TrackerLog])] = parseLogRDD
+      .groupBy(log => log.getCookie.toString)
 
-    parseLog.collect.foreach(println)
+    // 会话切割
+    val userSessionRDD: RDD[(String, TrackerSession)] = userGroupRDD.flatMapValues { case iter =>
+      val userProcessor = new OneUserTrackerLogsProcessor(iter.toArray)
+      userProcessor.buildSession()
+    }
+
+
+
+
+    userSessionRDD.foreach(println)
 
     sc.stop()
   }

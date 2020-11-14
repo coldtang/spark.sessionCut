@@ -3,9 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.tang.spark.session;
-
-import java.io.Serializable;
+package com.tang.session;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
@@ -232,18 +230,18 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /** Creates a new TrackerSession RecordBuilder */
-  public static com.tang.spark.session.TrackerSession.Builder newBuilder() {
-    return new com.tang.spark.session.TrackerSession.Builder();
+  public static TrackerSession.Builder newBuilder() {
+    return new TrackerSession.Builder();
   }
   
   /** Creates a new TrackerSession RecordBuilder by copying an existing Builder */
-  public static com.tang.spark.session.TrackerSession.Builder newBuilder(com.tang.spark.session.TrackerSession.Builder other) {
-    return new com.tang.spark.session.TrackerSession.Builder(other);
+  public static TrackerSession.Builder newBuilder(TrackerSession.Builder other) {
+    return new TrackerSession.Builder(other);
   }
   
   /** Creates a new TrackerSession RecordBuilder by copying an existing TrackerSession instance */
-  public static com.tang.spark.session.TrackerSession.Builder newBuilder(com.tang.spark.session.TrackerSession other) {
-    return new com.tang.spark.session.TrackerSession.Builder(other);
+  public static TrackerSession.Builder newBuilder(TrackerSession other) {
+    return new TrackerSession.Builder(other);
   }
   
   /**
@@ -265,11 +263,11 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
 
     /** Creates a new Builder */
     private Builder() {
-      super(com.tang.spark.session.TrackerSession.SCHEMA$);
+      super(TrackerSession.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(com.tang.spark.session.TrackerSession.Builder other) {
+    private Builder(TrackerSession.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.session_id)) {
         this.session_id = data().deepCopy(fields()[0].schema(), other.session_id);
@@ -314,8 +312,8 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Creates a Builder by copying an existing TrackerSession instance */
-    private Builder(com.tang.spark.session.TrackerSession other) {
-            super(com.tang.spark.session.TrackerSession.SCHEMA$);
+    private Builder(TrackerSession other) {
+            super(TrackerSession.SCHEMA$);
       if (isValidValue(fields()[0], other.session_id)) {
         this.session_id = data().deepCopy(fields()[0].schema(), other.session_id);
         fieldSetFlags()[0] = true;
@@ -364,7 +362,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'session_id' field */
-    public com.tang.spark.session.TrackerSession.Builder setSessionId(java.lang.CharSequence value) {
+    public TrackerSession.Builder setSessionId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.session_id = value;
       fieldSetFlags()[0] = true;
@@ -377,7 +375,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'session_id' field */
-    public com.tang.spark.session.TrackerSession.Builder clearSessionId() {
+    public TrackerSession.Builder clearSessionId() {
       session_id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -389,7 +387,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'session_server_time' field */
-    public com.tang.spark.session.TrackerSession.Builder setSessionServerTime(java.lang.CharSequence value) {
+    public TrackerSession.Builder setSessionServerTime(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.session_server_time = value;
       fieldSetFlags()[1] = true;
@@ -402,7 +400,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'session_server_time' field */
-    public com.tang.spark.session.TrackerSession.Builder clearSessionServerTime() {
+    public TrackerSession.Builder clearSessionServerTime() {
       session_server_time = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -414,7 +412,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'cookie' field */
-    public com.tang.spark.session.TrackerSession.Builder setCookie(java.lang.CharSequence value) {
+    public TrackerSession.Builder setCookie(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.cookie = value;
       fieldSetFlags()[2] = true;
@@ -427,7 +425,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'cookie' field */
-    public com.tang.spark.session.TrackerSession.Builder clearCookie() {
+    public TrackerSession.Builder clearCookie() {
       cookie = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -439,7 +437,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'cookie_label' field */
-    public com.tang.spark.session.TrackerSession.Builder setCookieLabel(java.lang.CharSequence value) {
+    public TrackerSession.Builder setCookieLabel(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.cookie_label = value;
       fieldSetFlags()[3] = true;
@@ -452,7 +450,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'cookie_label' field */
-    public com.tang.spark.session.TrackerSession.Builder clearCookieLabel() {
+    public TrackerSession.Builder clearCookieLabel() {
       cookie_label = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -464,7 +462,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'ip' field */
-    public com.tang.spark.session.TrackerSession.Builder setIp(java.lang.CharSequence value) {
+    public TrackerSession.Builder setIp(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.ip = value;
       fieldSetFlags()[4] = true;
@@ -477,7 +475,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'ip' field */
-    public com.tang.spark.session.TrackerSession.Builder clearIp() {
+    public TrackerSession.Builder clearIp() {
       ip = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -489,7 +487,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'landing_url' field */
-    public com.tang.spark.session.TrackerSession.Builder setLandingUrl(java.lang.CharSequence value) {
+    public TrackerSession.Builder setLandingUrl(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.landing_url = value;
       fieldSetFlags()[5] = true;
@@ -502,7 +500,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'landing_url' field */
-    public com.tang.spark.session.TrackerSession.Builder clearLandingUrl() {
+    public TrackerSession.Builder clearLandingUrl() {
       landing_url = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -514,7 +512,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'pageview_count' field */
-    public com.tang.spark.session.TrackerSession.Builder setPageviewCount(int value) {
+    public TrackerSession.Builder setPageviewCount(int value) {
       validate(fields()[6], value);
       this.pageview_count = value;
       fieldSetFlags()[6] = true;
@@ -527,7 +525,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'pageview_count' field */
-    public com.tang.spark.session.TrackerSession.Builder clearPageviewCount() {
+    public TrackerSession.Builder clearPageviewCount() {
       fieldSetFlags()[6] = false;
       return this;
     }
@@ -538,7 +536,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'click_count' field */
-    public com.tang.spark.session.TrackerSession.Builder setClickCount(int value) {
+    public TrackerSession.Builder setClickCount(int value) {
       validate(fields()[7], value);
       this.click_count = value;
       fieldSetFlags()[7] = true;
@@ -551,7 +549,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'click_count' field */
-    public com.tang.spark.session.TrackerSession.Builder clearClickCount() {
+    public TrackerSession.Builder clearClickCount() {
       fieldSetFlags()[7] = false;
       return this;
     }
@@ -562,7 +560,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'domain' field */
-    public com.tang.spark.session.TrackerSession.Builder setDomain(java.lang.CharSequence value) {
+    public TrackerSession.Builder setDomain(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.domain = value;
       fieldSetFlags()[8] = true;
@@ -575,7 +573,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'domain' field */
-    public com.tang.spark.session.TrackerSession.Builder clearDomain() {
+    public TrackerSession.Builder clearDomain() {
       domain = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -587,7 +585,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Sets the value of the 'domain_label' field */
-    public com.tang.spark.session.TrackerSession.Builder setDomainLabel(java.lang.CharSequence value) {
+    public TrackerSession.Builder setDomainLabel(java.lang.CharSequence value) {
       validate(fields()[9], value);
       this.domain_label = value;
       fieldSetFlags()[9] = true;
@@ -600,7 +598,7 @@ public class TrackerSession extends org.apache.avro.specific.SpecificRecordBase 
     }
     
     /** Clears the value of the 'domain_label' field */
-    public com.tang.spark.session.TrackerSession.Builder clearDomainLabel() {
+    public TrackerSession.Builder clearDomainLabel() {
       domain_label = null;
       fieldSetFlags()[9] = false;
       return this;
