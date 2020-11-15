@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b27cf02-ddd0-4b4c-8be7-4a110012f970" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionGenerator.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,25 +31,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="290">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding>
                 <element signature="e#26#100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-              <folding>
-                <element signature="e#26#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,10 +46,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="608">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#26#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionGenerator.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+              <folding>
+                <element signature="e#26#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="e#26#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,9 +146,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tang/spark/session/TrackerSession.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/spark/session/SessionCutETL.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/spark/session/OneUserTrackerLogsProcessor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" />
       </list>
     </option>
   </component>
@@ -488,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="e#26#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0-sources.jar!/org/apache/spark/rdd/RDD.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -505,25 +511,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/trackerLog/part-00000">
+    <entry file="file://$PROJECT_DIR$/data/output/trackerSession/part-00000">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+    <entry file="file://$PROJECT_DIR$/data/output/trackerSession/part-r-00000.parquet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="250">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <element signature="e#26#100#0" expanded="true" />
+            <element signature="e#26#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="201">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
           <folding>
-            <element signature="e#26#72#0" expanded="true" />
+            <element signature="e#26#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/trackerLog/part-00000">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#26#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="e#26#100#0" expanded="true" />
           </folding>
         </state>
       </provider>

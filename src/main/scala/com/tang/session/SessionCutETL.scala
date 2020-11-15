@@ -41,7 +41,8 @@ object SessionCutETL {
 
     // 会话切割
     val userSessionRDD: RDD[(String, TrackerSession)] = userGroupRDD.flatMapValues { case iter =>
-      val userProcessor = new OneUserTrackerLogsProcessor(iter.toArray)
+      // 混入
+      val userProcessor = new OneUserTrackerLogsProcessor(iter.toArray) with PageViewSessionGenerator
       userProcessor.buildSession(domainLabelList.value)
     }
 
@@ -64,7 +65,7 @@ object SessionCutETL {
       session
     }
 
-    OutputComponent.fromOutPutFileType("Text1")
+    OutputComponent.fromOutPutFileType("Text")
       .writeOutputData(sc, parseLogRDD, "data/output", cookieLabelSessionRDD)
     //cookieLabelSessionRDD.collect().foreach(println)
 

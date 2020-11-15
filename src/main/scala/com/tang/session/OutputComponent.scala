@@ -5,6 +5,9 @@ import org.apache.parquet.avro.{AvroParquetOutputFormat, AvroWriteSupport}
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 
+/**
+  * 输出接口
+  */
 trait OutputComponent {
   def writeOutputData(sc: SparkContext, parseLogRDD: RDD[TrackerLog],
                       outputPath: String, cookieLabelSessionRDD: RDD[TrackerSession]) = {
