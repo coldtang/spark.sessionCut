@@ -3,12 +3,11 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package com.tang.session;
-
+package com.tang.session;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TrackerLog\",\"namespace\":\"com.tang.spark.session\",\"fields\":[{\"name\":\"log_type\",\"type\":\"string\"},{\"name\":\"log_server_time\",\"type\":\"string\"},{\"name\":\"cookie\",\"type\":\"string\"},{\"name\":\"ip\",\"type\":\"string\"},{\"name\":\"url\",\"type\":\"string\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TrackerLog\",\"namespace\":\"com.tang.session\",\"fields\":[{\"name\":\"log_type\",\"type\":\"string\"},{\"name\":\"log_server_time\",\"type\":\"string\"},{\"name\":\"cookie\",\"type\":\"string\"},{\"name\":\"ip\",\"type\":\"string\"},{\"name\":\"url\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.CharSequence log_type;
   @Deprecated public java.lang.CharSequence log_server_time;
@@ -135,18 +134,18 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /** Creates a new TrackerLog RecordBuilder */
-  public static TrackerLog.Builder newBuilder() {
-    return new TrackerLog.Builder();
+  public static com.tang.session.TrackerLog.Builder newBuilder() {
+    return new com.tang.session.TrackerLog.Builder();
   }
   
   /** Creates a new TrackerLog RecordBuilder by copying an existing Builder */
-  public static TrackerLog.Builder newBuilder(TrackerLog.Builder other) {
-    return new TrackerLog.Builder(other);
+  public static com.tang.session.TrackerLog.Builder newBuilder(com.tang.session.TrackerLog.Builder other) {
+    return new com.tang.session.TrackerLog.Builder(other);
   }
   
   /** Creates a new TrackerLog RecordBuilder by copying an existing TrackerLog instance */
-  public static TrackerLog.Builder newBuilder(TrackerLog other) {
-    return new TrackerLog.Builder(other);
+  public static com.tang.session.TrackerLog.Builder newBuilder(com.tang.session.TrackerLog other) {
+    return new com.tang.session.TrackerLog.Builder(other);
   }
   
   /**
@@ -163,11 +162,11 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
 
     /** Creates a new Builder */
     private Builder() {
-      super(TrackerLog.SCHEMA$);
+      super(com.tang.session.TrackerLog.SCHEMA$);
     }
     
     /** Creates a Builder by copying an existing Builder */
-    private Builder(TrackerLog.Builder other) {
+    private Builder(com.tang.session.TrackerLog.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.log_type)) {
         this.log_type = data().deepCopy(fields()[0].schema(), other.log_type);
@@ -192,8 +191,8 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Creates a Builder by copying an existing TrackerLog instance */
-    private Builder(TrackerLog other) {
-            super(TrackerLog.SCHEMA$);
+    private Builder(com.tang.session.TrackerLog other) {
+            super(com.tang.session.TrackerLog.SCHEMA$);
       if (isValidValue(fields()[0], other.log_type)) {
         this.log_type = data().deepCopy(fields()[0].schema(), other.log_type);
         fieldSetFlags()[0] = true;
@@ -222,7 +221,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'log_type' field */
-    public TrackerLog.Builder setLogType(java.lang.CharSequence value) {
+    public com.tang.session.TrackerLog.Builder setLogType(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.log_type = value;
       fieldSetFlags()[0] = true;
@@ -235,7 +234,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Clears the value of the 'log_type' field */
-    public TrackerLog.Builder clearLogType() {
+    public com.tang.session.TrackerLog.Builder clearLogType() {
       log_type = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -247,7 +246,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'log_server_time' field */
-    public TrackerLog.Builder setLogServerTime(java.lang.CharSequence value) {
+    public com.tang.session.TrackerLog.Builder setLogServerTime(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.log_server_time = value;
       fieldSetFlags()[1] = true;
@@ -260,7 +259,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Clears the value of the 'log_server_time' field */
-    public TrackerLog.Builder clearLogServerTime() {
+    public com.tang.session.TrackerLog.Builder clearLogServerTime() {
       log_server_time = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -272,7 +271,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'cookie' field */
-    public TrackerLog.Builder setCookie(java.lang.CharSequence value) {
+    public com.tang.session.TrackerLog.Builder setCookie(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.cookie = value;
       fieldSetFlags()[2] = true;
@@ -285,7 +284,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Clears the value of the 'cookie' field */
-    public TrackerLog.Builder clearCookie() {
+    public com.tang.session.TrackerLog.Builder clearCookie() {
       cookie = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -297,7 +296,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'ip' field */
-    public TrackerLog.Builder setIp(java.lang.CharSequence value) {
+    public com.tang.session.TrackerLog.Builder setIp(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.ip = value;
       fieldSetFlags()[3] = true;
@@ -310,7 +309,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Clears the value of the 'ip' field */
-    public TrackerLog.Builder clearIp() {
+    public com.tang.session.TrackerLog.Builder clearIp() {
       ip = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -322,7 +321,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'url' field */
-    public TrackerLog.Builder setUrl(java.lang.CharSequence value) {
+    public com.tang.session.TrackerLog.Builder setUrl(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.url = value;
       fieldSetFlags()[4] = true;
@@ -335,7 +334,7 @@ public class TrackerLog extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Clears the value of the 'url' field */
-    public TrackerLog.Builder clearUrl() {
+    public com.tang.session.TrackerLog.Builder clearUrl() {
       url = null;
       fieldSetFlags()[4] = false;
       return this;

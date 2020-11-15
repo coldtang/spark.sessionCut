@@ -1,4 +1,4 @@
-{"namespace": "com.tang.spark.session",
+{"namespace": "com.tang.session",
  "type": "record",
  "name": "TrackerLog",
  "fields": [

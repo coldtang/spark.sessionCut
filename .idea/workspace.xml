@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3b27cf02-ddd0-4b4c-8be7-4a110012f970" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/trackerSession/.part-00000.crc" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/trackerSession/.part-00000.crc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/trackerSession/part-00000" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/trackerSession/part-00000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/avro/TrackerLog.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/avro/TrackerLog.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/avro/TrackerSession.avsc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/avro/TrackerSession.avsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tang/spark/session/TrackerLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tang/spark/session/TrackerSession.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,20 +25,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="200">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="e#26#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerLog.avsc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerSession.avsc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="108" selection-start-line="108" selection-end-line="108" />
-              <folding>
-                <element signature="e#26#62#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -140,6 +158,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" />
+        <option value="$PROJECT_DIR$/src/main/avro/TrackerLog.avsc" />
+        <option value="$PROJECT_DIR$/src/main/avro/TrackerSession.avsc" />
       </list>
     </option>
   </component>
@@ -206,6 +226,13 @@
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="avro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,14 +240,7 @@
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -228,9 +248,24 @@
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tang" type="462c0819:PsiDirectoryNode" />
               <item name="session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="tang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
@@ -323,7 +358,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="MyBatis Log" />
@@ -332,7 +367,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32991204" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3020528" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3020528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,27 +388,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/spark/session/package.scala">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerSession.avsc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerLog.avsc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tang/session/TrackerSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="130" selection-start-line="11" selection-start-column="130" selection-end-line="11" selection-end-column="130" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -454,13 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/trackerLog/part-00000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
@@ -498,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -515,13 +515,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/trackerLog/part-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tang/spark/session/TrackerLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tang/session/TrackerSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="125">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
-            <element signature="e#26#62#0" expanded="true" />
+            <element signature="e#26#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerLog.avsc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/avro/TrackerSession.avsc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
