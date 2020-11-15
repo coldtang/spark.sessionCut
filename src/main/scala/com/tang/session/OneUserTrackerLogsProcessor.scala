@@ -4,6 +4,7 @@ import java.net.URL
 import java.util.UUID
 
 import org.apache.commons.lang3.time.FastDateFormat
+import org.apache.spark.util.LongAccumulator
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -12,7 +13,7 @@ import scala.collection.mutable.ArrayBuffer
   *
   * @param trackerLog
   */
-class OneUserTrackerLogsProcessor(trackerLog: Array[TrackerLog]) extends SessionGenerator{
+class OneUserTrackerLogsProcessor(trackerLog: Array[TrackerLog]) extends SessionGenerator {
 
   private val sortedTrackerLogs = trackerLog.sortBy(m => m.getLogServerTime.toString)
 
@@ -21,7 +22,7 @@ class OneUserTrackerLogsProcessor(trackerLog: Array[TrackerLog]) extends Session
     *
     * @return
     */
-  def buildSession(domainLabelMap: Map[String, String]): ArrayBuffer[TrackerSession] = {
+  def buildSession(domainLabelMap: Map[String, String], sessionCountAcc: LongAccumulator): ArrayBuffer[TrackerSession] = {
     //会话切割
     val cuttedSessionLogsResult = cutSession(sortedTrackerLogs)
 
@@ -55,7 +56,7 @@ class OneUserTrackerLogsProcessor(trackerLog: Array[TrackerLog]) extends Session
       session.setDomainLabel(domainLabel)
 
       // 统计会话的个数
-      //sessionCountAcc.add(1)
+      sessionCountAcc.add(1)
 
       session
     }

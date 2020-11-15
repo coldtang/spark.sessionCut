@@ -53,6 +53,9 @@ object SessionCutETL {
 
     val sc = new SparkContext(conf)
 
+    // 统计会话的个数
+    val sessionCountAcc = sc.longAccumulator("session count")
+
     //网站域名标签map，可以放在数据库中，然后从数据库中捞取出来
     val domainLabelMap = Map("www.baidu.com" -> "level1", "www.ali.com" -> "level2",
       "jd.com" -> "level3", "youku.com" -> "level4")
@@ -76,8 +79,8 @@ object SessionCutETL {
     // 会话切割
     val userSessionRDD: RDD[(String, TrackerSession)] = userGroupRDD.flatMapValues { case iter =>
       // 混入
-      val userProcessor = new OneUserTrackerLogsProcessor(iter.toArray) with PageViewSessionGenerator
-      userProcessor.buildSession(domainLabelList.value)
+      val userProcessor = new OneUserTrackerLogsProcessor(iter.toArray)
+      userProcessor.buildSession(domainLabelList.value,sessionCountAcc)
     }
 
     //  给会话的cookie打上标签
