@@ -1,10 +1,8 @@
 package com.tang.session
 
-import org.apache.parquet.avro.{AvroParquetOutputFormat, AvroWriteSupport}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.hadoop.fs.{FileSystem, Path}
 
 object SessionCutETL {
   private val logTypeSet = Set("pageview", "click")
@@ -12,10 +10,19 @@ object SessionCutETL {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf()
     conf.setAppName("SessionCutETL")
-    conf.setMaster("local")
+    if (!conf.contains("spark.master")) {
+      conf.setMaster("local")
+    }
 
     // 开启kryo序列化
     conf.set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+
+    // 通过配置拿到我们配置的输入和输出路径
+    val visitLogsInputPath = conf.get("spark.sessioncut.visitLogsInputPath", "data/rawdata/visit_log.txt")
+    val cookieLabelInputPath = conf.get("spark.sessioncut.cookbaseOutputPathieLabelInputPath", "data/cookie_label.txt")
+    val baseOutputPath = conf.get("spark.sessioncut.baseOutputPath", "data/output")
+
+    val outputFileType = if (args.nonEmpty) args(0) else "text"
 
     val sc = new SparkContext(conf)
 
@@ -26,7 +33,7 @@ object SessionCutETL {
     val domainLabelList = sc.broadcast(domainLabelMap)
 
     // 加载数据
-    val rawRDD: RDD[String] = sc.textFile("data/rawdata/visit_log.txt")
+    val rawRDD: RDD[String] = sc.textFile(visitLogsInputPath)
 
     // 解析数据并过滤
     val parseLogRDD: RDD[TrackerLog] = rawRDD.flatMap(line => RawLogParser.parse(line))
@@ -47,7 +54,7 @@ object SessionCutETL {
     }
 
     //  给会话的cookie打上标签
-    val cookieLabelRDD: RDD[(String, String)] = sc.textFile("data/cookie_label.txt").map { case line =>
+    val cookieLabelRDD: RDD[(String, String)] = sc.textFile(cookieLabelInputPath).map { case line =>
       val temp = line.split("\\|")
       (temp(0), temp(1)) // (cookie, cookie_label)
     }
@@ -65,8 +72,8 @@ object SessionCutETL {
       session
     }
 
-    OutputComponent.fromOutPutFileType("Text")
-      .writeOutputData(sc, parseLogRDD, "data/output", cookieLabelSessionRDD)
+    OutputComponent.fromOutPutFileType(outputFileType)
+      .writeOutputData(sc, parseLogRDD, baseOutputPath, cookieLabelSessionRDD)
     //cookieLabelSessionRDD.collect().foreach(println)
 
     sc.stop()
