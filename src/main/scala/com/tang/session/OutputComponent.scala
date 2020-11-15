@@ -22,9 +22,10 @@ trait OutputComponent {
     * @return
     */
   private def pathIsExists(sc: SparkContext, outputPath: String) = {
-    var filestream = FileSystem.get(sc.hadoopConfiguration)
-    if (filestream.exists(new Path(outputPath))) {
-      filestream.delete(new Path(outputPath), true)
+    val file = new Path(outputPath)
+    val filestream = file.getFileSystem(sc.hadoopConfiguration)
+    if (filestream.exists(file)) {
+      filestream.delete(file, true)
     }
   }
 }

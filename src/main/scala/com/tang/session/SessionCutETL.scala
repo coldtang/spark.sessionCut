@@ -4,6 +4,33 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.{SparkConf, SparkContext}
 
+/**
+  *  会话切割项目的程序入口
+spark-submit  --class com.tang.session.SessionCutETL  \
+	--master spark://master:8088 \
+  --deploy-mode client \
+	--driver-memory 1g \
+  --executor-memory 1g \
+  --executor-cores 1 \
+  --total-executor-cores 2 \
+  --jars parquet-avro-1.8.1.jar \
+	--conf spark.sessioncut.visitLogsInputPath=hdfs://master:9999/user/hadoop-coldtang/example/rawdata/visit_log.txt \
+  --conf spark.sessioncut.cookieLabelInputPath=hdfs://master:9999/user/hadoop-coldtang/example/cookie_label.txt \
+  --conf spark.sessioncut.baseOutputPath=hdfs://master:9999/user/hadoop-coldtang/example/output \
+  sparkcore-1.0-SNAPSHOT.jar text
+或者用：
+spark-submit  --class com.tang.session.SessionCutETL  \
+	--master spark://master:7077 \
+  --deploy-mode client \
+	--driver-memory 1g \
+  --executor-memory 1g \
+  --executor-cores 1 \
+  --total-executor-cores 2 \
+	--conf spark.sessioncut.visitLogsInputPath=hdfs://master:9999/user/hadoop-coldtang/example/rawdata/visit_log.txt \
+  --conf spark.sessioncut.cookieLabelInputPath=hdfs://master:9999/user/hadoop-coldtang/example/cookie_label.txt \
+  --conf spark.sessioncut.baseOutputPath=hdfs://master:9999/user/hadoop-coldtang/example/output \
+  sparkcore-1.0-SNAPSHOT-jar-with-dependencies.jar parquet
+  */
 object SessionCutETL {
   private val logTypeSet = Set("pageview", "click")
 
@@ -19,10 +46,10 @@ object SessionCutETL {
 
     // 通过配置拿到我们配置的输入和输出路径
     val visitLogsInputPath = conf.get("spark.sessioncut.visitLogsInputPath", "data/rawdata/visit_log.txt")
-    val cookieLabelInputPath = conf.get("spark.sessioncut.cookbaseOutputPathieLabelInputPath", "data/cookie_label.txt")
+    val cookieLabelInputPath = conf.get("spark.sessioncut.cookieLabelInputPath", "data/cookie_label.txt")
     val baseOutputPath = conf.get("spark.sessioncut.baseOutputPath", "data/output")
 
-    val outputFileType = if (args.nonEmpty) args(0) else "text"
+    val outputFileType = if (args.nonEmpty) args(0) else "Text"
 
     val sc = new SparkContext(conf)
 
@@ -74,7 +101,6 @@ object SessionCutETL {
 
     OutputComponent.fromOutPutFileType(outputFileType)
       .writeOutputData(sc, parseLogRDD, baseOutputPath, cookieLabelSessionRDD)
-    //cookieLabelSessionRDD.collect().foreach(println)
 
     sc.stop()
   }
