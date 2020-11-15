@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3b27cf02-ddd0-4b4c-8be7-4a110012f970" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,13 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="140">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="e#26#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+              <folding>
+                <element signature="e#26#72#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/spark/session/OneUserTrackerLogsProcessor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OneUserTrackerLogsProcessor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala" />
       </list>
     </option>
   </component>
@@ -177,6 +189,13 @@
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="trackerLog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
@@ -324,7 +343,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16152816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1930295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="MyBatis Log" />
@@ -486,12 +505,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/output/trackerLog/part-00000">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="140">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="e#26#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/OutputComponent.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="e#26#72#0" expanded="true" />
           </folding>
         </state>
       </provider>

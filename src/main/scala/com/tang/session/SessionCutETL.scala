@@ -4,6 +4,7 @@ import org.apache.parquet.avro.{AvroParquetOutputFormat, AvroWriteSupport}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.hadoop.fs.{FileSystem, Path}
 
 object SessionCutETL {
   private val logTypeSet = Set("pageview", "click")
@@ -63,18 +64,11 @@ object SessionCutETL {
       session
     }
 
-    val baseOutputPath = "data/output/trackerLog"
-    AvroWriteSupport.setSchema(sc.hadoopConfiguration, TrackerLog.SCHEMA$)
-    parseLogRDD.map((null, _)).saveAsNewAPIHadoopFile(baseOutputPath, classOf[Void], classOf[TrackerLog],
-      classOf[AvroParquetOutputFormat[TrackerLog]])
-
-    val baseTrackerSessionOutputPath = "data/output/trackerSession"
-    AvroWriteSupport.setSchema(sc.hadoopConfiguration, TrackerSession.SCHEMA$)
-    cookieLabelSessionRDD.map((null, _)).saveAsNewAPIHadoopFile(baseTrackerSessionOutputPath,
-      classOf[Void], classOf[TrackerSession],
-      classOf[AvroParquetOutputFormat[TrackerSession]])
+    OutputComponent.fromOutPutFileType("Text1")
+      .writeOutputData(sc, parseLogRDD, "data/output", cookieLabelSessionRDD)
     //cookieLabelSessionRDD.collect().foreach(println)
 
     sc.stop()
   }
+
 }
