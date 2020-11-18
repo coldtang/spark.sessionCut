@@ -1,0 +1,54 @@
+airport.csv:
+"iata","airport","city","state","country","lat","long"
+"00M","Thigpen ","Bay Springs","MS","USA",31.95376472,-89.23450472
+"00R","Livingston Municipal","Livingston","TX","USA",30.68586111,-95.01792778
+"00V","Meadow Lake","Colorado Springs","CO","USA",38.94574889,-104.5698933
+
+iata：国际航空运输协会(International Air Transport Association，简称IATA)编号
+airport：机场的名字
+city：机场所在的城市
+state：机场所在的州
+country：机场所在的国家
+lat：机场所在的经度
+long：机场所在的纬度
+
+2008.csv:
+2008,1,1,2,2057,2052,2312,2258,AS,324,N306AS,135,126,112,14,5,SEA,SJC,697,7,16,0,,0,NA,NA,NA,NA,NA
+2008,1,1,2,703,715,958,951,AS,572,N302AS,175,156,144,7,-12,SEA,PSP,987,6,25,0,,0,NA,NA,NA,NA,NA
+2008,1,1,2,2011,1846,2248,2145,AS,511,N564AS,157,179,136,63,85,SAN,SEA,1050,7,14,0,,0,0,0,0,0,63
+第一个字段：year，年
+第二个字段：month，月
+第三个字段：dayOfMonth，每个月的第几天(1-31)
+第四个字段：dayOfWeek，每个星期的第几天(1(星期一)-7(星期天))
+第五个字段：depTime，航班实际离开时间(格式为hhmm)
+第六个字段：crsDepTime，计划离开时间(格式hhmm)
+第七个字段：arrTime，实际到达时间(格式hhmm)
+第八个字段：crsArrTime,计划到达时间(格式hhmm)
+第九个字段：uniqueCarrier，唯一的航空公司代码
+第十个字段：flightNum，飞行次数
+第十一个字段：tailNum，飞机机尾编号
+第十二个字段：actualElapsedTime,实际飞行时间(分钟)
+第十三个字段：crsElapsedTime，计划飞行时间(分钟)
+第十四个字段：airTime，在空中时间(分钟)
+第十五个字段：arrDelay，到达延迟时间(分钟)
+第十六个字段：depDelay，起飞延迟时间(分钟)
+第十七个字段：origin，起飞机场的IATA编号
+第十八个字段：dest，终点机场的IATA编号
+第十九个字段：distance，两个机场之间的距离(英里)
+第二十个字段：taxiIn，上机时间(分钟)
+第二十一个字段：taxiOut，下机时间(分钟)
+第二十二个字段：canceled，航班是否取消，大于0表示取消
+第二十三个字段：cancellationCode，取消的原因(A = carrier, B = weather, C = NAS, D = security)
+第二十四个字段：diverted,是否改道(1 = yes, 0 = no)
+第二十五个字段：carrierDelay，航空公司延迟时间(分钟)
+第二十六个字段：weatherDelay，天气延迟的时间(分钟)
+第二十七个字段：nasDelay，National Air System 延迟的时间(分钟)
+第二十八个字段：securityDelay，由于安全延迟的时间(分钟)
+第二十九个字段：lateAircraftDelay，Late Aircraft Delay(分钟)
+
+
+
+1、查询出取消的航班
+2、查出每一个月取消的航班次数
+3、查询出所有两个机场之间的航班数
+.......
