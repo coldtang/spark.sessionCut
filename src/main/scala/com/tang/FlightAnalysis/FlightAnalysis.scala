@@ -47,14 +47,18 @@ object FlightAnalysis {
     // cube分析数据
     //flightDF.select($"origin", $"dest").groupBy($"origin", $"dest").count().show(1000)
     //flightDF.select($"origin", $"dest").cube($"origin", $"dest").count().show(1000)
+    //    flightDF.cube($"origin", $"dest").agg(Map(
+    //      "*" -> "count",
+    //      "times.actualElapsedTime" -> "avg",
+    //      "distance" -> "avg"
+    //    )).orderBy($"avg(distance)".desc).show()
 
-    flightDF.cube($"origin", $"dest").agg(Map(
-      "*" -> "count",
-      "times.actualElapsedTime" -> "avg",
-      "distance" -> "avg"
-    )).orderBy($"avg(distance)".desc).show()
-
-
+    import org.apache.spark.sql.functions._
+    flightDF.agg(
+      min($"times.actualElapsedTime"),
+      max($"times.actualElapsedTime"),
+      avg($"times.actualElapsedTime"),
+      sum($"times.actualElapsedTime")).show(1000)
 
     spark.stop()
   }
