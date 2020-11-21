@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b27cf02-ddd0-4b4c-8be7-4a110012f970" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/example/complex_type.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/example/complex_type_copy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/example/device_info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/example/device_info_etl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonSQLFunctionTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,33 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="14" column="72" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="72" />
-              <folding>
-                <element signature="e#30#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonSQLFunctionTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-              <folding>
-                <element signature="e#30#70#0" expanded="true" />
-                <element signature="e#610#705#0" />
-              </folding>
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -60,10 +30,73 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/FlightAnalysis.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="600">
+              <caret line="24" column="74" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="74" />
               <folding>
                 <element signature="e#33#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/Conversions.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/AirLine.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1925">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonSQLFunctionTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+              <folding>
+                <element signature="e#30#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="16" />
+              <folding>
+                <element signature="e#30#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="74" column="11" lean-forward="true" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding>
+                <element signature="e#26#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/FlightAnalysis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonSQLFunctionTest.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -150,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -168,7 +201,7 @@
               <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="rawdata" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
@@ -216,12 +249,25 @@
               <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
               <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="tang" type="462c0819:PsiDirectoryNode" />
+              <item name="FlightAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sparkcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sparkcore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="tang" type="462c0819:PsiDirectoryNode" />
+              <item name="session" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,7 +387,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19839142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20107238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,7 +396,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37683284" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" weight="0.37683284" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -406,13 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/rawdata/visit_log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -512,10 +551,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/airInfo/airports.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.jar!/org/apache/spark/sql/SaveMode.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -525,19 +564,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/airInfo/info/part-00000-404b7596-9b68-49bb-97aa-96fdb6f4a238-c000.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-1275" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/airInfo/info/part-00001-404b7596-9b68-49bb-97aa-96fdb6f4a238-c000.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/airInfo/info/part-00001-404b7596-9b68-49bb-97aa-96fdb6f4a238-c000.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="-525" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.jar!/org/apache/spark/sql/DataFrameWriter.class">
@@ -561,16 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="e#26#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/airInfo/字段说明.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -578,41 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/Conversions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/AirLine.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.jar!/org/apache/spark/sql/SparkSession.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/FlightAnalysis.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#33#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,27 +628,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala">
+    <entry file="file://$PROJECT_DIR$/data/example/complex_type.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="72" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/rawdata/visit_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/session/SessionCutETL.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="74" column="11" lean-forward="true" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding>
+            <element signature="e#26#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/Conversions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/FlightAnalysis.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="74" />
+          <folding>
+            <element signature="e#33#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/FlightAnalysis/AirLine.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1925">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonComplexTypeTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="16" />
           <folding>
             <element signature="e#30#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/example/complex_type.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/tang/complextype/JsonSQLFunctionTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="714">
           <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
           <folding>
             <element signature="e#30#70#0" expanded="true" />
-            <element signature="e#610#705#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
         </state>
       </provider>
     </entry>
